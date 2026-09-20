@@ -5,8 +5,13 @@ Notes and patches from getting an **OWC Thunderbolt 5 Hub** talking USB on a
 Omarchy with the Aurora kernel (`linux-aurora` 7.1.12, `aurora-silicon/linux`).
 
 A Keychron Q4 on the hub USB-A port enumerates and types. That is USB 3
-tunneled over USB4. **DisplayPort and PCIe tunnels are not implemented** in
-this stack; a monitor on the hub Thunderbolt ports stays dark.
+tunneled over USB4.
+
+**Display is a separate repo:**
+[asahi-j416s-display](https://github.com/oliverlukschander/asahi-j416s-display).
+The software CM already builds DP tunnel `0:5 <-> 1:19` and tears it down
+after DPRX fails. The monitor is a VMM7100 USB-C HDMI adapter on a hub
+Thunderbolt 5 port (this hub has no HDMI jack).
 
 ## What to send where
 
