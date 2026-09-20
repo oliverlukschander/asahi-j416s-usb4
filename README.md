@@ -21,6 +21,7 @@ reviewable work is two kernel patches:
 Suggested order:
 
 1. Open a PR against **Aurora-Silicon/linux** `aurora-wip` with both patches (that is the kernel this machine actually ran).
+   Opened: https://github.com/aurora-silicon/linux/pull/6
 2. Offer the same tipd change to **AsahiLinux/linux** / Sven if that `cd321x_typec_update_mode()` block is in their tree.
 3. **m1n1**: current `main` already falls back to hyphen aliases. Bumping asahi-alarm `m1n1` past 1.6.1 is an alternative to patch 0002, not a replacement if 1.6.1 stays shipped.
 4. **Omarchy MX Mac** (`maralcbr/omarchy-mx-mac`): separate later. That is a catalog allowlist for `apple,j416s` on the Aurora RC image, plus hardware evidence. Not these patches.
