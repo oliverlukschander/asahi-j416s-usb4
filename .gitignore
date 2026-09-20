@@ -1,0 +1,10 @@
+*.ko
+*.o
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+.kbuild/
+*.pkg.tar.xz
+boot.bin*

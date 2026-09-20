@@ -1,0 +1,4 @@
+The patches under patches/ are intended for the Linux kernel and are
+licensed under GPL-2.0, same as the files they modify.
+
+The rest of this repository (notes and workaround docs) is GPL-2.0 as well.
